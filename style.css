@@ -30,7 +30,15 @@ body,html {
       }
 
 
+.responsive1{
+  width: 30%;
+  height:auto;
+}
 
+.responsive{
+  width: 100%;
+  height:auto;
+}
 
 h1 {
   color: white;
@@ -43,6 +51,7 @@ h1 {
     margin:0px 0px 10px;
     color: white;
     font-size: 10px
+    width
 }
 /*info borders*/
 #infoboxed{
