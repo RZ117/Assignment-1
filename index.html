@@ -1,66 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- font and styling-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+#TopButton {
+ display: none;
+ position: fixed;
+ bottom: 20px;
+ right: 30px;
+ z-index: 99;
+ font-size: 18px;
+ border: none;
+ outline: none;
+ background-color: darkgreen;
+ color: white;
+ cursor: pointer;
+ padding: 15px;
+ border-radius: 4px;
+}
+ }
+
+ #TopButton:hover {
+   background-color: black;
+ }
+
+a:link {
+  color: lightblue;
+}
+
+a:visited {
+  color: lightgreen;
+}
+</style>
 <title>Assignment 1</title>
 </head>
 <body>
+<!--Top button-->
+<button onclick="topFunction()" id="TopButton" title="Back to top">&#8593</button>
+
+<<script type="text/javascript">
+  //button script
+var TopButton = document.getElementById("TopButton");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    TopButton.style.display = "block";
+  } else {
+    TopButton.style.display = "none";
+  }
+}
+
+//Scroll to top on click
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="header">
+  <div class="header-section">
+    <h1>IIT Assignment 1 Demo</h1>
+  </div>
+</div>
+
+<!--Personal Info box-->
+<div id= infoboxed>
 <h2> Personal Information </h2>
+
+<div id="portrait">
+  <div style="float:right;">
+<img src="personal.jpg" alt="" style="width:125px; height:125px;">
+<div class="caption"> Official Highschool Portrait </div>
+</div>
+</div>
+<!--i haven't figured out how to format this so i spammed HTML spaces :( -->
   <ul>
-    <li>Name&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Reza Syahputra Koto</li>
-    <li>Birthdate&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 17/11/2003</li>
+    <li>Name&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Reza Syahputra Koto</li>
+    <li>Birthdate&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 2003-11-17 (ISO 8601 for the win!)</li>
     <li>Nationality&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Indonesia</li>
-    <li>Student Number&nbsp; &nbsp; : 3940230</li>
+    <li>Student Number&nbsp; : 3940230</li>
     <li>Student Email&nbsp; &nbsp; &nbsp; &nbsp;: S3940230@student.rmit.edu.au</li>
-    <li>Hobby&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Video Games, Comics</li>
-    <li>Languages spoken : Indonesian, English</li>
+    <li>Hobby&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;: Video Games, Comics</li>
+    <li>Languages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Indonesian, English</li>
 </ul>
-<p>&nbsp;&nbsp; Hello there! My name is Reza Syahputra Koto, nickname Reza. I was born in Indonesia on the 17<sup>th</sup> of November, 2003. Im just a socially awkward human that likes reading mangas, playing video games, and highly interested in technology but somehow struggles at math. I'm currently studying at RMIT University (Student No. 3940230). I can speak Indonesian &amp; English fluently.</p>
+</div>
+<p>&nbsp;&nbsp; Hello there! My name is Reza Syahputra Koto, nickname Reza. I was born in Indonesia on the 17<sup>th</sup> of November, 2003. Im just a socially awkward human that likes reading mangas, playing video games, and highly interested in technology but somehow struggles at math. I'm currently studying at RMIT University (Student No. 3940230). I can speak Indonesian & English fluently.</p>
 <p>&nbsp;&nbsp; I wrote this short introduction for my first assignment on the Introduction to Information Technology Course. I hope this can show you a little bit about me.</p>
 <br>
+<!--Contents of assignment-->
 <h2> Interest in IT</h2>
-  <p>&nbsp;Ever since i pooped in grade school, I was always interested in technology, particularly phones &amp; computers, I started tinkering with personal computers in middle school and watched a lot of technology related videos on YouTube. Eventually I started looking forward to events and product launch keynotes (e.g. CES/MWC/Computex) and watch their livestreams, I liked watching new mobile phone and processor launches in particular. I often build computers for myself or for my dad&rsquo;s small office. I also learned how to make some sites with WordPress CMS &amp; host it on VPS services with linux.</p>
+  <p>&nbsp;Ever since i was in grade school, I was always interested in technology, particularly phones &amp; computers, I started tinkering with personal computers in middle school and watched a lot of technology related videos on YouTube. Eventually I started looking forward to events and product launch keynotes (e.g. CES/MWC/Computex) and watch their livestreams, I liked watching new mobile phone and processor launches in particular. I often build computers for myself or for my dad's small office. I also learned how to make some sites with WordPress CMS & host it on VPS services with linux.</p>
 <p>&nbsp;At first I never thought I would have gotten into RMIT, I was recommended by my parents and agents to study here, I noticed RMIT puts a lot of emphasis on practical works, I do feel that this will help people gain real experiences for future careers.</p>
-<p>&nbsp;I expected to learn web programming and IT systems administration during my study at RMIT, I&rsquo;m interested in jobs in those fields in particular, I also expect to learn basic programming and network management.</p>
-<p><strong>Ideal Job</strong></p>
+<p>&nbsp;I expected to learn web programming and IT systems administration during my study at RMIT, I'm interested in jobs in those fields in particular, I also expect to learn basic programming and network management.</p>
+
+<h2>Ideal Job</h2>
 <ul>
 <li><a href="https://archive.ph/NNnnA">https://archive.ph/NNnnA</a> SELTEC Junior IT</li>
 </ul>
-<img src="job1.png" alt="">
-<p>&nbsp;</p>
-<p>This is currently ideal job, an entry-level IT hardware tech support. I expect the job to include giving technical hardware and software support to customers and employees, troubleshooting, creating basic guidelines and procedures, and resolve IT related problems or incidents in a timely manner. This position is appealing to me because I have interests in computer hardware, operating system, and softwares. I also want to learn more about the workflow and attitude required in this position. I would also like to experience working in a team, working with inexperienced customers, and learn how to handle high workloads that&rsquo;s expected in this position.</p>
-<p>I&rsquo;m currently studying for the Bachelor of IT degree at RMIT, I&rsquo;m quite knowledgeable with computer hardware, and how to do the initial configurations of the systems, I&rsquo;m also interested and currently learning about management softwares and Microsoft programs. I have a decent troubleshooting skills and can handle resolving problems remotely or on site with experienced or inexperienced customers and users.</p>
-<p>To further enhance and to add to my skills and qualifications I plan to study at the university and self-study and research about IT support and services, along with in-depth study/research of the computer hardware, IT management softwares, Microsoft programs and the best way to deploy, maintain, and troubleshoot these systems. Currently I&rsquo;m actively maintaining some office systems remotely in my home country. I may also apply for extra online courses on various websites like YouTube, etc.</p>
-<p>&nbsp;</p>
-<p><strong>Personal Profile</strong></p>
+
+<center><img src="job1.png" alt="" width="1000" height="600"></center>
+
+<p>This is currently ideal job, an entry-level IT hardware tech support. I expect the job to include giving technical hardware and software support to customers and employees, troubleshooting, creating basic guidelines and procedures, and resolve IT related problems or incidents in a timely manner. This position is appealing to me because I have interests in computer hardware, operating system, and softwares. I also want to learn more about the workflow and attitude required in this position. I would also like to experience working in a team, working with inexperienced customers, and learn how to handle high workloads that's expected in this position.</p>
+<p>I'm currently studying for the Bachelor of IT degree at RMIT, I'm quite knowledgeable with computer hardware, and how to do the initial configurations of the systems, I'm also interested and currently learning about management softwares and Microsoft programs. I have a decent troubleshooting skills and can handle resolving problems remotely or on site with experienced or inexperienced customers and users.</p>
+<p>To further enhance and to add to my skills and qualifications I plan to study at the university and self-study and research about IT support and services, along with in-depth study/research of the computer hardware, IT management softwares, Microsoft programs and the best way to deploy, maintain, and troubleshoot these systems. Currently I'm actively maintaining some office systems remotely in my home country. I may also apply for extra online courses on various websites like YouTube, etc.</p>
+
+<h2>Personal Profile</h2>
+
 <p>Myers-Briggs test result: <a href="https://www.16personalities.com/istp-personality">https://www.16personalities.com/istp-personality</a></p>
 <center><img src="myersbriggs.png" alt="" width="1000" height="600"></center>
+
 <p>Online Learning Style Test: <a href="https://archive.ph/V5OEx">https://archive.ph/V5OEx</a></p>
 <center><img src="learningstyle.png" alt="" width="1000" height="600"></center>
-<p>&nbsp;</p>
+
 <p>Big Five Personality Test: <a href="https://openpsychometrics.org/tests/IPIP-BFFM/results.php?r=2,3.7,3.3,2.9,3.3#_I">https://openpsychometrics.org/tests/IPIP-BFFM/results.php?r=2,3.7,3.3,2.9,3.3#_I</a></p>
 <center><img src="bigfive.png" alt="" width="1000" height="600"></center>
-<p>&nbsp; A short summary of my myers-briggs test shows that my strengths include optimism, energetic, creative, practical, rational and spontaneous, knows how to prioritize something, relaxed, and great in a crisis. While weaknesses include stubbornness, insensitive, private and reserved, easily bored, dislikes long term commitments, and risky behaviour. My online learning tests show that I&rsquo;m more of a visual learner,</p>
+<p>&nbsp; A short summary of my myers-briggs test shows that my strengths include optimism, energetic, creative, practical, rational and spontaneous, knows how to prioritize something, relaxed, and great in a crisis. While weaknesses include stubbornness, insensitive, private and reserved, easily bored, dislikes long term commitments, and risky behaviour. My online learning tests show that I'm more of a visual learner,</p>
 <p>&nbsp; I think this test gives me an insight of my general personality and overall learning style, &nbsp;while not 100% accurate, can provide me with some reference to better myself in the future, optimize my learning methods and resources, and helps me to adjust in tasks, relationships, and work environment.</p>
 <p>&nbsp; In taking the results to account in forming a team, I might consider choosing teammates that will be suitable for me or complement my strengths and also teammates that supplement my weaknesses. Hopefully we can make a great team and do great in whatever projects we may be working on.</p>
-<p><strong>Project Ideas</strong></p>
+<h2>Project Ideas</h2>
 <ul>
 <li>Project type: software or software suite</li>
 <li>Project idea: automated comic localization software</li>
 </ul>
-<p><strong><u>Overview</u></strong></p>
+
+<h3>Overview</h3>
 <p>&nbsp; The project will be a software or several software creating a software suite for automating the task of localizing various forms of media (particularly comics, for this project idea). The software will likely require complex codes and the help of Artificial Intelligence (AI) algorithms to accurately recognize elements in the media. Using manga (a Japanese comic or graphic novel) as an example, common elements in the image includes individual panels, speech and box bubbles of varying opacity and shapes, speech text, sound effects text (SFX), etc.</p>
 <p>&nbsp; The program will also need to manipulate the images accurately to remove the original text with varying languages and styles without ruining the art itself or automatically redraw the missing patches behind the original text. After the removal/cleaning process the program needs to automatically typeset the translated text with the appropriate fonts and language.</p>
-<p>&nbsp; Advanced versions of the program/program suite may also automatically translate the original language to English or other languages with acceptable accuracy, thus reducing the translator&rsquo;s work to proofreading the translated output text.</p>
+<p>&nbsp; Advanced versions of the program/program suite may also automatically translate the original language to English or other languages with acceptable accuracy, thus reducing the translator's work to proofreading the translated output text.</p>
 
-<p><strong><u>Motivation</u></strong></p>
-<p>&nbsp; Currently, there are so many non-english media that might have a good potential to be very successful or popular worldwide, one of the main challenges for these hidden gems to be discovered is obviously the dreaded language barrier. A particular media may be doing average or below average in it&rsquo;s home country, and may be popular somewhere else. But publishers obviously have limited human resource to license and localize it to English or other languages. Localizing manga requires a decent amount of work, from translating and proofreading the original text, cleaning the original text, bubbles and sound effects and redrawing the art behind those texts, and lettering the translated script to the comic itself, not to mention each chapter of a comic media varies from 5 to 50+ pages. Obviously only the comics that lucky or good enough to make a big break to be officially translated to English or other languages.</p>
+<h3>Motivation</h3>
+<p>&nbsp; Currently, there are so many non-english media that might have a good potential to be very successful or popular worldwide, one of the main challenges for these hidden gems to be discovered is obviously the dreaded language barrier. A particular media may be doing average or below average in it's home country, and may be popular somewhere else. But publishers obviously have limited human resource to license and localize it to English or other languages. Localizing manga requires a decent amount of work, from translating and proofreading the original text, cleaning the original text, bubbles and sound effects and redrawing the art behind those texts, and lettering the translated script to the comic itself, not to mention each chapter of a comic media varies from 5 to 50+ pages. Obviously only the comics that lucky or good enough to make a big break to be officially translated to English or other languages.</p>
 <p>&nbsp; This project idea aims to simplify the process of localization significantly, therefore reducing the cost, labour, and time needed to localize a series. This will in turn allow a lot more titles to be enjoyed by people worldwide.</p>
 
-<p><strong><u>Description</u></strong></p>
-<p>&nbsp;&nbsp;The project will be a software or part of a software suite, the goal is to automate the localization of non-english media, particularly Japanese, Chinese, and Korean comics. The process step will include translation of the original text, cleaning/redrawing of those texts and art behind the texts, lettering the translated and proofread text, and optional denoising of the image for best quality. The user would simply have to load the images to the software itself and the software will connect to the internet and start doing it&rsquo;s job. The software will be semi-cloud based and implements multiple authentication systems to ensure it&rsquo;s legal use by authorized entities. So far I have the determined some of the tools that maybe needed for this project. Some of the tools include: Python, Google&rsquo;s TensorFlow and ImageMagick for image recognition, image manipulation, and image denoising. As for the translation tool I&rsquo;m thinking of utilizing DeepL&rsquo;s API as it&rsquo;s shown to be much better than what Google Translate offers. Other features that may be added include manual image editing (ImageMagick), manual denoising, colour correction, live lettering and proofreading tools, and cloud/online-only features.</p>
-<p>&nbsp; The program could be monetized by selling is as a SaaS (Software-as-a-Service) subscription and sold to publishing corporations as an enterprise software, this could help long term developments and the online-only program could significantly hamper it&rsquo;s illegal use and piracy of the software itself.</p>
+<div id="mangasample">
+<img src="himurakenshin.jpg" alt="" style="width:300px; height:450px;">
+<div class="caption"> Rurouni Kenshin: Hokkaido Arc </div>
+</div>
+
+<h3>Description</h3>
+<p>&nbsp;&nbsp;The project will be a software or part of a software suite, the goal is to automate the localization of non-english media, particularly Japanese, Chinese, and Korean comics. The process step will include translation of the original text, cleaning/redrawing of those texts and art behind the texts, lettering the translated and proofread text, and optional denoising of the image for best quality. The user would simply have to load the images to the software itself and the software will connect to the internet and start doing it's job. The software will be semi-cloud based and implements multiple authentication systems to ensure it's legal use by authorized entities. So far I have the determined some of the tools that maybe needed for this project. Some of the tools include: Python, Google's TensorFlow (to build CNNs) and ImageMagick for image recognition, image manipulation, and image denoising. As for the translation tool I'm thinking of utilizing DeepL's API as it's shown to be much better than what Google Translate offers. Other features that may be added include manual image editing (ImageMagick), manual denoising, colour correction, live lettering and proofreading tools, and cloud/online-only features.
+</p>
+<p>&nbsp; The program could be monetized by selling is as a SaaS (Software-as-a-Service) subscription and sold to publishing corporations as an enterprise software, this could help long term developments and the online-only program could significantly hamper it's illegal use and piracy of the software itself.</p>
+
+<h3>Tools & Technologies</h3>
+<p>&nbsp;&nbsp;I have identified some potential open source and closed source tools that may be used in this project. For example, Google's TensorFlow will the best candidate to build a Convolutional Neural Network (CNN) to detect the features in the comic image itself. ImageMagick is an open-source image manipulation tool that may be used for this project. Python could be used as the programming language, and DeepL API may be used for the translation task. Since this software would need a lot of online service, a cloud provider will be needed, such as Microsoft Azure or Amazon Web Services (AWS). Since we are working with Convolutional Neural Networks we need a fairly powerful hardware to proceed with the project, we can use a cloud service to provide the hardware needed for deep learning or procure a powerful workstation pPC depending on the needs and situation. </p>
+
+<center>
+<img src="aws.png" width="200" height="200" style="display:inline-block;" />
+<img src="TensorFlow.png" width="200" height="200" style="display:inline-block;" />
+<img src="deepl.png" width="200" height="200" style="display:inline-block;" />
+<img src="python.jpg" width="200" height="200" style="display:inline-block;" />
+</center>
+
+<h3>Outcome</h3>
+<p>&nbsp;&nbsp;If this project becomes a success i'd imagine more non-english media may be much more accessible worldwide. And the software seems to be commercially viable, as it would increase speed and efficiency in localization of non-english comics, while also reducing the overall cost. Many non-english titles have been buried in history because it never gained enough traction or simply not lucky enough to be officially translated by publishers. With this tool we hope that more people can enjoy non-english comics and more potential authors and artists to come forward with their creative ideas.
+
 </body>
 </html>
