@@ -38,6 +38,7 @@ body,html {
 .responsive{
   width: 100%;
   height:auto;
+  float: right
 }
 
 h1 {
