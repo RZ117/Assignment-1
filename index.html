@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+.main {
+      visibility: hidden
+    }
+
 #TopButton {
  display: none;
  position: fixed;
@@ -40,9 +44,22 @@ a:visited {
 }
 </style>
 
+<script>
+window.addEventListener("load", function() {
+     document.getElementById("loadanimation").style.display = "none";
+     document.getElementById("main").style.visibility = "visible";
+
+   })
+ </script>
+
+
 <title>Assignment 1</title>
 </head>
 <body>
+
+<div id="loadanimation">img src="animated.gif" /></div>
+<div id="main">
+
 <!--Top button-->
 <button onclick="topFunction()" id="TopButton" title="Back to top">&#8593</button>
 
