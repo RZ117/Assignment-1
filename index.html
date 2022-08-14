@@ -26,7 +26,7 @@
  padding: 15px;
  border-radius: 4px;
 }
- }
+
 
  #TopButton:hover {
    background-color: black;
@@ -40,16 +40,16 @@ a:visited {
   color: lightgreen;
 }
 </style>
-<script>
-
 
 <title>Assignment 1</title>
 </head>
 <body>
+
+
 <!--Top button-->
 <button onclick="topFunction()" id="TopButton" title="Back to top">&#8593</button>
 
-<<script type="text/javascript">
+<script>
   //button script
 var TopButton = document.getElementById("TopButton");
 window.onscroll = function() {scrollFunction()};
@@ -67,6 +67,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+
 <!--Site Header-->
 <div class="header">
   <div class="header-section">
@@ -74,9 +75,21 @@ function topFunction() {
   </div>
 </div>
 
+<div class="navbar">
+  <div class="span1">
+  <ul>
+    <li><a href="#Info">About Me</a></li>
+    <li><a href="#interest">My Interests</a></li>
+    <li><a href="#jobs">Ideal Job</a></li>
+    <li><a href="#profile">My Profile</a></li>
+    <li><a href="#projects">Project Idea</a></li>
+  </ul>
+</div>
+</div>
+
 <!--Personal Info box-->
 <div id= infoboxed>
-<h2> Personal Information </h2>
+<h2 id="info"> Personal Information </h2>
 
 <div id="portrait">
   <div style="float:right;">
@@ -101,12 +114,12 @@ function topFunction() {
 <p>&nbsp;&nbsp; I wrote this short introduction for my first assignment on the Introduction to Information Technology Course. I hope this can show you a little bit about me.</p>
 <br>
 <!--Contents of assignment-->
-<h2> Interest in IT</h2>
+<h2 id="interest"> Interest in IT</h2>
   <p>&nbsp;Ever since i was in grade school, I was always interested in technology, particularly phones &amp; computers, I started tinkering with personal computers in middle school and watched a lot of technology related videos on YouTube. Eventually I started looking forward to events and product launch keynotes (e.g. CES/MWC/Computex) and watch their livestreams, I liked watching new mobile phone and processor launches in particular. I often build computers for myself or for my dad's small office. I also learned how to make some sites with WordPress CMS & host it on VPS services with linux.</p>
 <p>&nbsp;At first I never thought I would have gotten into RMIT, I was recommended by my parents and agents to study here, I noticed RMIT puts a lot of emphasis on practical works, I do feel that this will help people gain real experiences for future careers.</p>
 <p>&nbsp;I expected to learn web programming and IT systems administration during my study at RMIT, I'm interested in jobs in those fields in particular, I also expect to learn basic programming and network management.</p>
 
-<h2>Ideal Job</h2>
+<h2 id="jobs">Ideal Job</h2>
 <ul>
 <li><a href="https://archive.ph/NNnnA">https://archive.ph/NNnnA</a> SELTEC Junior IT</li>
 </ul>
@@ -117,7 +130,7 @@ function topFunction() {
 <p>I'm currently studying for the Bachelor of IT degree at RMIT, I'm quite knowledgeable with computer hardware, and how to do the initial configurations of the systems, I'm also interested and currently learning about management softwares and Microsoft programs. I have a decent troubleshooting skills and can handle resolving problems remotely or on site with experienced or inexperienced customers and users.</p>
 <p>To further enhance and to add to my skills and qualifications I plan to study at the university and self-study and research about IT support and services, along with in-depth study/research of the computer hardware, IT management softwares, Microsoft programs and the best way to deploy, maintain, and troubleshoot these systems. Currently I'm actively maintaining some office systems remotely in my home country. I may also apply for extra online courses on various websites like YouTube, etc.</p>
 
-<h2>Personal Profile</h2>
+<h2 id="profile">Personal Profile</h2>
 
 <p>Myers-Briggs test result: <a href="https://www.16personalities.com/istp-personality">https://www.16personalities.com/istp-personality</a></p>
 <center><img src="myersbriggs.png" alt="" class="responsive"></center>
@@ -131,7 +144,7 @@ function topFunction() {
 <p>&nbsp; A short summary of my myers-briggs test shows that my strengths include optimism, energetic, creative, practical, rational and spontaneous, knows how to prioritize something, relaxed, and great in a crisis. While weaknesses include stubbornness, insensitive, private and reserved, easily bored, dislikes long term commitments, and risky behaviour. My online learning tests show that I'm more of a visual learner,</p>
 <p>&nbsp; I think this test gives me an insight of my general personality and overall learning style, &nbsp;while not 100% accurate, can provide me with some reference to better myself in the future, optimize my learning methods and resources, and helps me to adjust in tasks, relationships, and work environment.</p>
 <p>&nbsp; In taking the results to account in forming a team, I might consider choosing teammates that will be suitable for me or complement my strengths and also teammates that supplement my weaknesses. Hopefully we can make a great team and do great in whatever projects we may be working on.</p>
-<h2>Project Ideas</h2>
+<h2 id="projects">Project Ideas</h2>
 <ul>
 <li>Project type: software or software suite</li>
 <li>Project idea: automated comic localization software</li>
