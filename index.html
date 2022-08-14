@@ -10,24 +10,7 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-#loader {
-      height: 100vh;
-      width: 100%;
-      background-color: black;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 999;
-    }
 
-    #loader img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 30%;
-    }
 #TopButton {
  display: none;
  position: fixed;
@@ -63,30 +46,6 @@ a:visited {
 <title>Assignment 1</title>
 </head>
 <body>
-
-<!-- Div for loader placement -->
-    <div id="loader">
-      <img src="animated.gif" />
-    </div>
-
-      <div>
-        <span>We will answer you soon!</span>
-      </div>
-    </section>
-    <script>
-
-  //hide the loader after page is loaded fully
-  var loader = document.getElementById("loader");
-  window.addEventListener("load", function () {
-    loader.style.height = "100%";
-    loader.style.width = "100%";
-
-    loader.style.borderRadius = "50%";
-    loader.style.visibility = "hidden";
-  });
-
-</script>
-
 <!--Top button-->
 <button onclick="topFunction()" id="TopButton" title="Back to top">&#8593</button>
 
